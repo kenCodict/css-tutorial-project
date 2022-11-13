@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* *************** HEADER ********************** */
+.navbar {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+    width: 100%;
+    border-top: 3px solid rgb(91, 90, 90);
+    background: linear-gradient(to top, rgb(37, 34, 34),grey);
+    border-bottom: 2px solid whitesmoke;
+    min-height: 40px;
+}
+.navContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 30px;
+}
+.navContainer li {
+    list-style-type: none;
+    border-left: 2px solid rgb(58, 56, 56);
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.navContainer li:first-child {
+    border-left: none;
+}
+.navContainer li  a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* ******* logo ************ */
+.company_info {
+    background: url('./reactjs.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height:250px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.companyLogo {
+    display:flex;
+    min-width: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 100px;
+
+}
+.companyTitle {
+    color:white;
+    text-transform:uppercase;
+    font-size: 10px;
+}
+.companyTitle h1 {
+    font-size: 3rem;
+}
+.companyTitle p {
+    font-size: 1.5rem;
+}
+.logo {
+    border: 5px dashed white;
+    width:100px;
+    height:105px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+/* *************** END OF HEADER HEADER ********************** */
+.titleContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+
+}
+.titleContainer h1 {
+    padding: 15px 5px 5px 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    height: 100%;
+}
+.titleContainer h1:first-child {
+background-color: black;
+flex: 2;
+color: white;
+
+}
+.titleContainer h1:last-child {
+    background: rgb(204, 200, 200);
+    flex: 1;
+}
+.red {
+    color: red;
+}
+.mainContent {
+    display:flex;
+}
+.mainContent .left {
+    flex: 2;
+    display: grid;
+    grid-template-areas: 
+    'dev cus'
+    'lo lo';
+}
+.mainContent .dev {
+    grid-area: dev;
+}
+.mainContent .costumer {
+    grid-area: cus;
+}
+.mainContent .lorem {
+    grid-area: lo;
+}
+
+.mainContent .right {
+    flex: 1;
+}
